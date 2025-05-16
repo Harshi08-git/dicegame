@@ -1,0 +1,60 @@
+<html>
+    <head> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .lavishly-yours-regular{
+            font-family: "Lavishly Yours", cursive;
+            font-style: normal;
+            font-size: 5rem;
+            font-weight: bold;
+            color: #46e0bc;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="heading">
+            <h1 class="lavishly-yours-regular">Click Refresh</h1>
+        </div>
+        <div class="container">
+            <div id="score">
+                <h2>Player1 Score</h2>
+                <h1 class="score1">0</h1>
+            </div>
+            <div id="player1">
+                <h2>Player 1</h2>
+                <img src="player1.jpg"/>
+            </div>
+           
+            <div class="result invisible">
+                <h1 id="finalResult"></h1>
+                <h2>Number of Matches Played: <span id="g1">0</span></h2>
+                <h2>Player1 Score: <span id="g2">0</span></h2>
+                <h2>Player2 Score: <span id="g3">0</span></h2>
+                <button onclick="reset()">Play Again</button>
+            </div>
+
+            <div id="player2">
+                <h2>Player 2</h2>
+                <img src="player2.jpg"/>
+            </div>
+            <div id="score">
+                <h2>Player2 Score</h2>
+                <h1 class="score2">0</h1>
+            </div>
+        </div>
+        <div class="btn">
+            <button id="play" onclick="play()">Refresh</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="endGame()">End Game</button>
+        </div>
+        <footer>
+            <p>www 🎲 Dice Game 🎲 com</p>
+            <p>Developed and Deployed by Harshi</p>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
